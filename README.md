@@ -9,9 +9,7 @@ DevOps practices include the following:
     Continuous Integration (CI)
     Continuous Deployment (CD)
 
-Summary Diagram
 
-![352691183-45f4ef12-c5b5-4247-9d43-356b5dfb671b](https://github.com/user-attachments/assets/87a83c1e-cc16-4e2d-991a-2fd268b0c492)
 
 Creating Dockerfile (Multi-stage build)
 
@@ -26,15 +24,15 @@ We will use Docker to containerize the Go web application. Docker is a container
 
 Commands to build the Docker container:
 
-docker build -t <your-docker-username>/go-web-app .
+docker build -t <your-docker-username>/go-app .
 
 Command to run the Docker container:
 
-docker run -p 8080:8080 <your-docker-username>/go-web-app
+docker run -p 8080:8080 <your-docker-username>/go-app
 
 Command to push the Docker container to Docker Hub:
 
-docker push <your-docker-username>/go-web-app
+docker push <your-docker-username>/go-app
 
 Continuous Integration (CI)
 
