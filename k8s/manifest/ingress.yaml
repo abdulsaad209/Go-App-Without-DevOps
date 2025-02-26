@@ -1,20 +1,20 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: go-app-with-devops
+  name: go-app
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
   rules:
-  - host: go-app-with-devops.local
+  - host: go-app.local
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: go-app-with-devops
+            name: go-app
             port:
               number: 90
 
