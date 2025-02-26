@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: saadzahid/go-app-with-devops
+  repository: saadzahid/go-app
   # This sets the pull policy for images.
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
