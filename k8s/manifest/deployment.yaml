@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-app-with-devops
+  labels:
+    app: go-app-with-devops
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: go-app-with-devops
+  template:
+    metadata:
+      labels:
+        app: go-app-with-devops
+    spec:
+      containers:
+      - name: go-app-with-devops
+        image: saadzahid/go-app-with-devops:v1
+        ports:
+        - containerPort: 90
+
