@@ -1,4 +1,5 @@
 DevOpsify the go web application
+[Article on Medium](https://medium.com/@saadzahid248/implementation-of-devops-on-a-project-a105d91d2ba8)
 
 The main goal of this project is to implement DevOps practices in the Go web application. The project is a simple website written in Golang. It uses the net/http package to serve HTTP requests.
 
